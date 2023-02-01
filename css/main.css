@@ -25,16 +25,6 @@ body {
   background-color: #D9D9D9;
 }
 
-#interactive_elements{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-#interactive_elements h2{
-  align-items: center;
-}
-
 .element {
   margin: 1%;
   padding: 1%;
@@ -275,4 +265,56 @@ a:hover img {
 .contact{
   background-color: #4B77B5;
   color: black;
+}
+
+#interactive_elements{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#interactive_elements h2{
+  align-items: center;
+}
+
+#text_elements{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#text_elements .element h3{
+  align-items: center;
+}
+
+.heading_container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  flex-direction: row;
+}
+
+.heading_container div{
+  margin: 1%;
+  padding: 1%;
+  flex-grow: 1;
+  min-height: 20%;
+  min-width: 20%;
+  padding-bottom: 2rem;
+  margin-bottom:4rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+#combined_elements{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#branding_elements{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }

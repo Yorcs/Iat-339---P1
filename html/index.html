@@ -153,42 +153,51 @@
 
         <section class="element">
             <h3>Headings</h3>
-            
-            <h4>CSS Selector for Heading 1</h4>
-            <p>h1</p>
+            <div class="heading_container">
+                <div class="headings">
+                    <h4>CSS Selector for Heading 1</h4>
+                    <p>h1</p>
 
-            <h4>Sample code for Heading 1</h4>
-            <code>&lt;h1&gt;Headings 1&lt;/h1&gt;</code>
+                    <h4>Sample code for Heading 1</h4>
+                    <code>&lt;h1&gt;Headings 1&lt;/h1&gt;</code>
 
-            <h4>Rendered element:</h4>
-            <h1>Headings 1</h1>
+                    <h4>Rendered element:</h4>
+                    <h1>Headings 1</h1>
+                </div>
 
-            <h4>CSS Selector for Heading 2</h4>
-            <p>h2</p>
+                <div class="headings">
+                    <h4>CSS Selector for Heading 2</h4>
+                    <p>h2</p>
 
-            <h4>Sample code for Heading 2</h4>
-            <code>&lt;h2&gt;Headings 2&lt;/h2&gt;</code>
+                    <h4>Sample code for Heading 2</h4>
+                    <code>&lt;h2&gt;Headings 2&lt;/h2&gt;</code>
 
-            <h4>Rendered element:</h4>
-            <h2>Headings 2</h2>
+                    <h4>Rendered element:</h4>
+                    <h2>Headings 2</h2>
+                </div>
 
-            <h4>CSS Selector for Heading 3</h4>
-            <p>h3</p>
+                <div class="headings">
+                    <h4>CSS Selector for Heading 3</h4>
+                    <p>h3</p>
 
-            <h4>Sample code for Heading 3</h4>
-            <code>&lt;h3&gt;Headings 3&lt;/h3&gt;</code>
+                    <h4>Sample code for Heading 3</h4>
+                    <code>&lt;h3&gt;Headings 3&lt;/h3&gt;</code>
 
-            <h4>Rendered element:</h4>
-            <h3>Headings 3</h3>
+                    <h4>Rendered element:</h4>
+                    <h3>Headings 3</h3>
+                </div>
 
-            <h4>CSS Selector for Heading 4</h4>
-            <p>h1</p>
+                <div class="headings">
+                    <h4>CSS Selector for Heading 4</h4>
+                    <p>h1</p>
 
-            <h4>Sample code for Heading 4</h4>
-            <code>&lt;h4&gt;Headings 4&lt;/h4&gt;</code>
+                    <h4>Sample code for Heading 4</h4>
+                    <code>&lt;h4&gt;Headings 4&lt;/h4&gt;</code>
 
-            <h4>Rendered element:</h4>
-            <h4>Headings 4</h4>
+                    <h4>Rendered element:</h4>
+                    <h4>Headings 4</h4>
+                </div>
+            </div>
         </section>
 
         <section class="element">
@@ -291,16 +300,37 @@
 
         <section class="element">
             <h3>Product/Service Listing</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.products .hades</p>
+
+            <h4>Sample Code:</h4>
+            <code>
+                &lt;div class = "products"&gt;
+                <blockquote>
+                    &lt;div class ="hades"&gt;
+                    <blockquote>
+                        &lt;h4&gt;Hades&lt;/h4&gt; <br>
+                        &lt;img src="../img/Hades_Main.png" alt="Hades title page"&gt; <br>
+                        &lt;p&gt;Escape from hell. Literally.&lt;/p&gt; <br>
+                        &lt;button type="button" id="hadesMain"&gt;View More&lt;/button&gt; <br>
+                    </blockquote>
+                    &lt;/div&gt;
+                </blockquote>
+                &lt;/div&gt;
+            </code>
+
+            <h4>Rendered element:</h4>
             <div class ="products">
                 <!--Images taken from supergiantsgame.com-->
                 <div class="hades">
                     <h4>Hades</h4>
                     <img src="../img/Hades_Main.png" alt="Hades title page"> 
                     <p>Escape from hell. Literally.</p>
-                    <button type="button">View more</button>
+                    <button type="button" id="hadesMain">View more</button>
                 </div>
 
-                <!--Image taken from https://thunderlotusgames.com/spiritfarer/-->
+                <!-- Image taken from https://thunderlotusgames.com/spiritfarer/
                 <div class="spiritfarer">
                     <h4>Spiritfarer</h4>
                     <img src="../img/spiritfarer_title.jpg" alt="Spiritfarer title page">
@@ -308,7 +338,7 @@
                     <button type="button">View more</button>
                 </div>
 
-                <!--Image taken from https://www.nintendo.com/store/products/fire-emblem-three-houses-switch/-->
+                Image taken from https://www.nintendo.com/store/products/fire-emblem-three-houses-switch/
                 <div class="fire_emblem">
                     <h4>Fire Emblem Warriors: Three Hopes</h4>
                     <img src="../img/fe3_hopes_title.jpg" alt="Fire emblem three hopes title page">
@@ -316,7 +346,7 @@
                     <button type="button">View more</button>
                 </div>
 
-                <!--Image taken from https://store.steampowered.com/app/831560/WARRIORS_OROCHI_4/-->
+                Image taken from https://store.steampowered.com/app/831560/WARRIORS_OROCHI_4/
                 <div class="warriors_orochi">
                     <h4>Warriors Orochi 4</h4>
                     <img src="../img/Warriors_orochi_4_Main.png" alt="Warriors orochi 4 title page">
@@ -324,13 +354,13 @@
                     <button type="button">View more</button>
                 </div>
 
-                <!--Image taken from stardewvalley.net-->
+                Image taken from stardewvalley.net
                 <div class="stardew_valley">
                     <h4>Stardew Valley</h4>
                     <img src="../img/stardew_valley_gameplay.png" alt="Stardew Valley Gameplay">
                     <p>A farming simulation game inspired by the famous franchise Story of Seasons.</p>
                     <button type="button">View more</button>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -369,30 +399,36 @@
         <section class="element">
             <h3>Checkout Cart</h3>
         </section>
-
-        <section class="element">
-            <h3>Branding</h3>
-
-            <h4>MonKlown Studio</h4>
-            <p>MonKlown Studio is an indie game company based in Vancouver, BC. It is created in January 2023. MonKlown Studio aims to create various games in order to expand their company and find their niche.</p>
-            <p>In the gaming industry, MonKlown Studio are mostly creating simulator or hack-and-slash genres. Their target audience are in the range of young children to young adults. Simulator genres tend to be popular with young children as it allows them to be more imaginative, while hack-and-slash games are more popular with young adults during their downtime.</p>
-
-            <h4>Color Scheme</h4>
-            <p>Below are the initial color scheme of the website</p>
-            <img src="../img/figma_color_scheme.png" alt="color scheme">
-
-            <h4>Fonts</h4>
-            <p>For the website, these are the proposed fonts that were taken from the FontSpace website. The texts will be using the Red World font created by Pixel Sagas. Meanwhile, the Headings will be using the Untlang font created by Essentials Studio.</p>
-            <img src="../img/figma_font.png" alt="fonts">
-
-            <h4>Initial Design Concept</h4>
-            <img src="../img/figma design.png" alt="improved design">
-        </section>
-
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
+    <!-- BRANDING SECTION -->
+    <section id="branding_elements">
+        <h2>Branding</h2>
+        
+        <section class="element">
+            <h4>MonKlown Studio</h4>
+            <p>MonKlown Studio is an indie game company based in Vancouver, BC. It is created in January 2023. MonKlown Studio aims to create various games in order to expand their company and find their niche.</p>
+            <p>In the gaming industry, MonKlown Studio are mostly creating simulator or hack-and-slash genres. Their target audience are in the range of young children to young adults. Simulator genres tend to be popular with young children as it allows them to be more imaginative, while hack-and-slash games are more popular with young adults during their downtime.</p>
+        </section>
 
+        <section class="element">
+            <h4>Color Scheme</h4>
+            <p>Below are the initial color scheme of the website</p>
+            <img src="../img/figma_color_scheme.png" alt="color scheme">
+        </section>
+
+        <section class="element">
+            <h4>Fonts</h4>
+            <p>For the website, these are the proposed fonts that were taken from the FontSpace website. The texts will be using the Red World font created by Pixel Sagas. Meanwhile, the Headings will be using the Untlang font created by Essentials Studio.</p>
+            <img src="../img/figma_font.png" alt="fonts">
+        </section>
+
+        <section class="element">
+            <h4>Initial Design Concept</h4>
+            <img src="../img/figma design.png" alt="improved design">           
+        </section>
+    </section>
 
     <section id="citations">
         <h2>Citations</h2>
