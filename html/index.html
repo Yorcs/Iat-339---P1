@@ -112,7 +112,7 @@
             <h3>Radio Button with Label</h3>
 
             <h4>CSS Selector for radio input:</h4>
-            <p>input[type=radio]</p>
+            <p>#programmer</p>
 
             <h4>Sample code for Radio Input:</h4>
             <code>&lt;input type="radio" id="programmer" name="Position" value="Programmer"&gt;</code>
@@ -132,9 +132,15 @@
         <!--Image taken from https://thunderlotusgames.com/spiritfarer/-->
         <section class="element">
             <h3>Image as a Link</h3>
-            <a href="https://thunderlotusgames.com/spiritfarer/"><img src="../img/spiritfarer_title.jpg" alt="spiritfarer title page"></a>
 
             <h4>CSS Selector</h4>
+            <p>a img</p>
+
+            <h4>Sample code</h4>
+            <code>&lt;a href="https://thunderlotusgames.com/spiritfarer/"&gt;&lt;img src="../img/spiritfarer_title.jpg" alt="spiritfarer title page"&gt;&lt;/a&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <a href="https://thunderlotusgames.com/spiritfarer/"><img src="../img/spiritfarer_title.jpg" alt="spiritfarer title page"></a>
         </section>
 
 
@@ -147,20 +153,93 @@
 
         <section class="element">
             <h3>Headings</h3>
+            
+            <h4>CSS Selector for Heading 1</h4>
+            <p>h1</p>
+
+            <h4>Sample code for Heading 1</h4>
+            <code>&lt;h1&gt;Headings 1&lt;/h1&gt;</code>
+
+            <h4>Rendered element:</h4>
             <h1>Headings 1</h1>
+
+            <h4>CSS Selector for Heading 2</h4>
+            <p>h2</p>
+
+            <h4>Sample code for Heading 2</h4>
+            <code>&lt;h2&gt;Headings 2&lt;/h2&gt;</code>
+
+            <h4>Rendered element:</h4>
             <h2>Headings 2</h2>
+
+            <h4>CSS Selector for Heading 3</h4>
+            <p>h3</p>
+
+            <h4>Sample code for Heading 3</h4>
+            <code>&lt;h3&gt;Headings 3&lt;/h3&gt;</code>
+
+            <h4>Rendered element:</h4>
             <h3>Headings 3</h3>
+
+            <h4>CSS Selector for Heading 4</h4>
+            <p>h1</p>
+
+            <h4>Sample code for Heading 4</h4>
+            <code>&lt;h4&gt;Headings 4&lt;/h4&gt;</code>
+
+            <h4>Rendered element:</h4>
             <h4>Headings 4</h4>
         </section>
 
         <section class="element">
             <h3>Paragraphs</h3>
+
+            <h4>CSS Selector:</h4>
+            <p>p</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;p&gt;MonKlown Studio is an indie game company founded in Vancouver, BC, on January 2023. Our team currently consists of 3 people&lt;/p&gt;</code>
+
+            <h4>Rendered element:</h4>
             <p>MonKlown Studio is an indie game company founded in Vancouver, BC, on January 2023. Our team currently consists of 3 people</p>
         </section>
 
         <section class="element">
             <h3>Numbered Lists</h3>
 
+            <h4>CSS Selector for every item container:</h4>
+            <p>ol li</p>
+
+            <h4>CSS Selector for the heading on the list:</h4>
+            <p>ol li h4</p>
+
+            <h4>CSS Selector for the image on the list:</h4>
+            <p>ol li img</p>
+
+            <h4>CSS Selector for the paragraph on the list:</h4>
+            <p>ol li p</p>
+
+            <h4>CSS Selector for the button on the list:</h4>
+            <p>#hadesMain</p>
+
+            <h4>Sample Code:</h4>
+            <code>
+                &lt;ol&gt;
+                <blockquote>
+                    &lt;li&gt;
+                    <blockquote>
+                        &lt;h4&gt;Hades&lt;/h4&gt; <br>
+                        &lt;img src="../img/Hades_Main.png" alt="Hades title page"&gt; <br>
+                        &lt;img src="../img/Hades_Gameplay.jpg" alt ="Hades Gameplay"&gt; <br>
+                        &lt;p&gt;Escape from hell. Literally.&lt;/p&gt; <br>
+                        &lt;button type="button" id="hadesMain"&gt;View More&lt;/button&gt; <br>
+                    </blockquote>
+                    &lt;/li&gt;
+                </blockquote>
+                &lt;/ol&gt;
+            </code>
+
+            <h4>Rendered element:</h4>
             <ol>
                 <li>
                     <!--Images taken from supergiantsgame.com-->
@@ -168,24 +247,7 @@
                     <img src="../img/Hades_Main.png" alt="Hades title page"> 
                     <img src="../img/Hades_Gameplay.jpg" alt ="Hades Gameplay">
                     <p>Escape from hell. Literally.</p>
-                    <button type="button">View more</button>
-                </li>
-
-                <li>
-                    <!--Image taken from https://thunderlotusgames.com/spiritfarer/-->
-                    <h4>Spiritfarer</h4>
-                    <img src="../img/spiritfarer_title.jpg" alt="Spiritfarer title page">
-                    <img src="../img/stella_fishing.png" alt="Protagonist is fishing">
-                    <p>An open world journey about death and acceptance.</p>
-                    <button type="button">View more</button>
-                </li>
-
-                <li>
-                    <!--Image taken from https://www.nintendo.com/store/products/fire-emblem-three-houses-switch/-->
-                    <h4>Fire Emblem Warriors: Three Hopes</h4>
-                    <img src="../img/fe3_hopes_title.jpg">
-                    <p>Three kingdom, three path. Which one will you choose?</p>
-                    <button type="button">View more</button>
+                    <button type="button" id="hadesMain">View more</button>
                 </li>
             </ol>
         </section>
@@ -198,6 +260,25 @@
 
         <section class="element">
             <h3>Main Navigation</h3>
+
+            <h4>CSS Selector:</h4>
+            <p>nav a</p>
+
+            <h4>Sample code:</h4>
+            <code>
+                &lt;nav&gt;
+                <blockquote>
+                    &lt;a href="#about_us"&gt;About Us&lt;/a&gt; <br>
+                    &lt;a href="#full_game_list"&gt;Game List&lt;/a&gt; <br>
+                    &lt;a href="#career"&gt;Career&lt;/a&gt; <br>
+                    &lt;a href="#faq"&gt;FAQ&lt;/a&gt; <br>
+                    &lt;a href="#contact_us"&gt;Contact Us&lt;/a&gt; <br>
+                    &lt;a href="#checkout"&gt;Checkout&lt;/a&gt; <br>
+                </blockquote>
+                &lt;/nav&gt;
+            </code>
+
+            <h4>Rendered element:</h4>
             <nav>
                 <a href="#about_us">About Us</a>
                 <a href="#full_game_list">Game List</a>
@@ -260,8 +341,8 @@
                 <div class="credit_card">
                     <h4>Credit Card Payment</h4>
 
-                    <label for="credit_card"> Credit card:</label>
-                    <input type="text" id="credit_card" name="credit_card">
+                    <label for="creditCard"> Credit card:</label>
+                    <input type="text" id="creditCard" name="creditCard">
 
                     <label for="date"> Date of expiry</label>
                     <input type="text" id="date" name="date">
