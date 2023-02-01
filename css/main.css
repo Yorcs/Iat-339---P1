@@ -1,0 +1,263 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+header{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap:wrap;
+}
+
+header h1{
+  align-self: center;
+}
+
+header p{
+  align-self: center;
+}
+
+body {
+  font-family: "Pink Chicken", 'Times New Roman', Times, serif;
+  padding: 2rem;
+  accent-color: #799FCC;
+  background-color: #D9D9D9;
+}
+
+#interactive_elements{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#interactive_elements h2{
+  align-items: center;
+}
+
+.element {
+  margin: 1%;
+  padding: 1%;
+  flex-grow: 1;
+  min-height: 20%;
+  min-width: 20%;
+  padding-bottom: 2rem;
+  margin-bottom:4rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h1{
+  margin-top: 1rem;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  margin-right: 0.5%;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+}
+
+p {
+  margin-top: 0;
+  max-width: 700px;
+  font-size: larger;
+}
+
+header nav{
+  display: block;
+  align-self: flex-end;
+  background-color: #153576;
+  color: #D9D9D9;
+  margin-left: 0rem;
+  padding-top: 0.5%;
+  padding-left: 0.6%;
+  padding-right: 0.6%;
+  padding-bottom: 0.5%;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+  max-width: 20rem;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+}
+
+input[type=radio]{
+  background-color: #799FCC;
+}
+
+input[type=radio]:hover{
+  background-color: #153576;
+  color: #D9D9D9;
+}
+
+input[type=radio]:checked{
+  background-color: #153576;
+  color:red;
+}
+
+#inputLabel{
+  background-color: #799FCC;
+}
+
+label[for=inputLabel]{
+  font-size: 120%;
+}
+
+button[type=submit]{
+  background-color: #153576;
+  color: #D9D9D9;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+button[type=submit]:hover, button[type=submit]:focus{
+  background-color: #799FCC;
+  color: #D9D9D9;
+  opacity: 0.5;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+button[type=reset]{
+  background-color:firebrick;
+  color: #D9D9D9;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+button[type=reset]:hover, button[type=reset]:focus{
+  background-color: crimson;
+  color: #D9D9D9;
+  opacity: 0.5;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+header nav a{
+  display: block;
+  align-self: flex-end;
+  background-color: #153576;
+  color: #D9D9D9;
+  margin-left: 0rem;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 0.6%;
+  padding-right: 0.6%;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+}
+
+header nav a:hover, header nav a:focus {
+  text-decoration: none;
+}
+
+a:hover, a:focus{
+    color:red;
+}
+
+a img {
+  width: 100%;
+}
+
+a:hover img {
+  opacity:0.5;
+  color:aquamarine;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+@font-face {
+  font-family: "Sunny Spells";
+  src: url('../fonts/sunny_spells/Sunny\ Spells.ttf');
+  src:url('../fonts/sunny_spells/Sunny\ Spells.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pink Chicken";
+  src: url('../fonts/Pink_chicken/PinkChicken-Regular.ttf');
+  src:url('../fonts/Pink_chicken/PinkChicken-Regular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Violet Smile";
+  src: url('../fonts/violet_smile/Violet\ Smile.ttf');
+  src:url('../fonts/violet_smile/Violet\ Smile.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+.payment_container{
+  display: flex;
+  align-items:flex-start;
+  flex-direction: column;
+}
+
+.payment_container div{
+  border: 1px #799FCC;
+  padding: 3rem;
+  margin-bottom: 5rem;
+}
+
+
+.credit_card{
+  background-color: #4B77B5;
+  color:black;
+  margin-bottom: 1rem;
+}
+
+.contact{
+  background-color: #4B77B5;
+  color: black;
+}
