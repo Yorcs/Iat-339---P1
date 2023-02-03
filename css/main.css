@@ -2,6 +2,8 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+
+/* Headers */
 header{
   display: flex;
   align-items: flex-start;
@@ -18,27 +20,12 @@ header p{
   align-self: center;
 }
 
-body {
-  font-family: "Pink Chicken", 'Times New Roman', Times, serif;
-  padding: 2rem;
-  accent-color: #799FCC;
-  background-color: #D9D9D9;
-}
-
-.element {
-  margin: 1%;
-  padding: 1%;
-  flex-grow: 1;
-  min-height: 20%;
-  min-width: 20%;
-  padding-bottom: 2rem;
-  margin-bottom:4rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: black;
+.styleguide_heading{
+  color: white;
 }
 
 h1{
+  text-align: center;
   margin-top: 1rem;
   font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
   font-size: 3rem;
@@ -64,23 +51,47 @@ h4 {
   font-size: 1.3rem;
 }
 
+.middle_h4{
+  margin-top: 5%;
+  margin-bottom: 0.25rem;
+}
+
+/* Sections */
+.element {
+  background-color: #D1D1C7;
+  margin: 1%;
+  padding: 1%;
+  flex-grow: 1;
+  min-height: 20%;
+  min-width: 20%;
+  padding-bottom: 2rem;
+  margin-bottom:4rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+/* Body Text */
+
+body {
+  font-family: "Pink Chicken", 'Times New Roman', Times, serif;
+  padding: 2rem;
+  accent-color: #799FCC;
+  background-image: url("../img/stella_fishing.png");
+  background-blend-mode: multiply;
+  background-color: #799FCC;
+}
+
 p {
   margin-top: 0;
   max-width: 700px;
   font-size: larger;
 }
 
-header nav{
-  display: block;
-  align-self: flex-end;
-  background-color: #153576;
-  color: #D9D9D9;
-  margin-left: 0rem;
-  padding-top: 0.5%;
-  padding-left: 0.6%;
-  padding-right: 0.6%;
-  padding-bottom: 0.5%;
-  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+/* Total value for the checkout */
+#total_value{
+  font-weight: bold;
+  font-size: x-large;
 }
 
 img{
@@ -118,13 +129,62 @@ code {
 
 #programmer:hover{
   background-color: #153576;
-  color: #D9D9D9;
+  color: #D1D1C7;
 }
 
 #programmer:checked{
   background-color: #153576;
   color:red;
 }
+
+.viewMore{
+  background-color: #153576;
+  color: #D1D1C7;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+.viewMore:hover, .viewMore:focus{
+  background-color: #799FCC;
+  color: #D1D1C7;
+  opacity: 0.5;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+button[type=submit]{
+  margin: 2%;
+  background-color: #153576;
+  color: #D1D1C7;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+button[type=submit]:hover, button[type=submit]:focus{
+  background-color: #799FCC;
+  color: #D1D1C7;
+  opacity: 0.5;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+button[type=reset]{
+  margin: 2%;
+  background-color:firebrick;
+  color: #D1D1C7;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+button[type=reset]:hover, button[type=reset]:focus{
+  background-color: crimson;
+  color: #D1D1C7;
+  opacity: 0.5;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+/* Labels */
 
 #inputLabel{
   background-color: #799FCC;
@@ -134,56 +194,28 @@ label[for=inputLabel]{
   font-size: 120%;
 }
 
-#hadesMain{
+/* Navigations and links */
+
+header nav{
+  display: block;
+  align-self: flex-end;
   background-color: #153576;
-  color: #D9D9D9;
+  color: #D1D1C7;
+  margin-bottom: 3%;
+  margin-left: 0rem;
+  padding-top: 0.5%;
+  padding-left: 0.6%;
+  padding-right: 0.6%;
+  padding-bottom: 0.5%;
   font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
-  font-size: large;
-}
-
-#hadesMain:hover, #hadesMain:focus{
-  background-color: #799FCC;
-  color: #D9D9D9;
-  opacity: 0.5;
-  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
-  font-size: large;
-}
-
-button[type=submit]{
-  background-color: #153576;
-  color: #D9D9D9;
-  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
-  font-size: large;
-}
-
-button[type=submit]:hover, button[type=submit]:focus{
-  background-color: #799FCC;
-  color: #D9D9D9;
-  opacity: 0.5;
-  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
-  font-size: large;
-}
-
-button[type=reset]{
-  background-color:firebrick;
-  color: #D9D9D9;
-  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
-  font-size: large;
-}
-
-button[type=reset]:hover, button[type=reset]:focus{
-  background-color: crimson;
-  color: #D9D9D9;
-  opacity: 0.5;
-  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
-  font-size: large;
 }
 
 header nav a{
   display: block;
   align-self: flex-end;
   background-color: #153576;
-  color: #D9D9D9;
+  color: #D1D1C7;
+  margin-bottom: 1%;
   margin-left: 0rem;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
@@ -196,6 +228,29 @@ header nav a:hover, header nav a:focus {
   text-decoration: none;
 }
 
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav a{
+  margin: 0.3%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1%;
+  min-width: 5%;
+  margin-bottom:4rem;
+  background-color: #153576;
+  color: #D1D1C7;
+  align-self: center;
+  font-family: "Violet Smile", Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a:hover, nav a:focus{
+  opacity: 50%;
+  text-decoration: none;
+}
 a:hover, a:focus{
     color:red;
 }
@@ -213,15 +268,7 @@ a:hover img {
   TEXT ELEMENTS -------------------
 */
 
-
-@font-face {
-  font-family: "Sunny Spells";
-  src: url('../fonts/sunny_spells/Sunny\ Spells.ttf');
-  src:url('../fonts/sunny_spells/Sunny\ Spells.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
+/* Fonts */
 @font-face {
   font-family: "Pink Chicken";
   src: url('../fonts/Pink_chicken/PinkChicken-Regular.ttf');
@@ -243,28 +290,108 @@ a:hover img {
   COMBINED ELEMENTS -------------------
 */
 
-.payment_container{
+/* Knowledge on how to use flexbox taken from https://jonitrythall.com/flexbox-cheatsheet */
+.products_container{
   display: flex;
-  align-items:flex-start;
+  align-items: center;
   flex-direction: column;
 }
 
+.products_container .products{
+  display: flex;
+  margin-bottom: 10%;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #799FCC;
+  width: 90%;
+}
+
+.products_container .products img{
+  align-self: center;
+}
+
+.products_container .products .product_content{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+  flex-grow: 1;
+  min-height: 20%;
+  min-width: 20%;
+  padding-bottom: 2rem;
+  margin-bottom:4rem;
+}
+
+.products_container .products .product_content button{
+  align-self: baseline;
+}
+
+.payment_container{
+  display: flex;
+  align-items:baseline;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .payment_container div{
-  border: 1px #799FCC;
+  background-color: #D1D1C7;
   padding: 3rem;
   margin-bottom: 5rem;
 }
 
-
-.credit_card{
-  background-color: #4B77B5;
+#payment{
+  display: flex;
+  flex-direction: column;
+  background-color: #D1D1C7;
   color:black;
-  margin-bottom: 1rem;
+  border-color: #153576;
+  border: 1px;
+  border-style: solid;
+  max-width: 90%;
 }
 
-.contact{
-  background-color: #4B77B5;
-  color: black;
+#payment label{
+  font-size: larger;
+}
+
+#payment input[type=text]
+{
+  font-size: x-large;
+}
+
+#checkout{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#checkout li{
+  font-size: x-large;
+  display: flex;
+  margin-bottom: 5%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#checkout li img{
+  align-self: center;
+}
+
+#checkout li .product_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1%;
+  margin-left: 10%;
+  padding: 1%;
+  flex-grow: 1;
+  min-height: 20%;
+  min-width: 20%;
+  padding-bottom: 2rem;
+}
+
+#checkout li .product_content button[type=reset]{
+  align-self: flex-start;
 }
 
 #interactive_elements{
@@ -317,4 +444,56 @@ a:hover img {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+}
+
+#citations{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#citations ul{
+  background-color: #D1D1C7;
+}
+
+#credit_card{
+  background-color: #799FCC;
+}
+
+#credit_card{
+  background-color: #153576;
+  color: #D1D1C7;
+}
+
+#credit_card{
+  background-color: #153576;
+  color:red;
+}
+
+#debit_card{
+  background-color: #799FCC;
+}
+
+#debit_card{
+  background-color: #153576;
+  color: #D1D1C7;
+}
+
+#debit_card{
+  background-color: #153576;
+  color:red;
+}
+
+#card_check{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+  margin-top: 0%;
+  padding: 1rem;
+}
+
+.confirmation{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
 }

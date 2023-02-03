@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Checkout - Monklown Studio</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="styleguide_heading">Checkout</h1>
+
+        <nav>
+            <a href="index.html#interactive_elements">Interactive Elements</a>
+            <a href="index.html#text_elements">Text Elements</a>
+            <a href="index.html#combined_elements">Combined Elements</a>
+            <a href="product_listing.html">Product Listing</a>
+            <a href="checkout.html">Checkout Template</a>
+            <a href="index.html#citations">Citations</a>
+        </nav>
+    </header>
+
+    <section class="element">
+        <h3>Checkout Cart</h3>
+        <ul id="checkout">
+            <li>
+                <img src="../img/Hades_Main.png" alt="Hades title page">
+
+                <div class="product_content">
+                    <h4>Hades</h4>
+                    <p>$19.99</p>
+                    <button type="reset" value="reset">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <img src="../img/spiritfarer_title.jpg" alt="Hades title page">
+                
+                <div class="product_content">
+                    <h4>Spiritfarer</h4>
+                    <p>$14.99</p>
+                    <button type="reset" value="reset">Remove</button>
+                </div>
+            </li>
+        </ul>
+
+        <p id="total_value">Total: $34.98</p>
+
+        <div class="confirmation">
+            <button type="submit" value="submit">Proceed</button>
+        </div>
+    </section>
+
+    <section class="element">
+        <h3>Payment Form</h3>
+
+        <div class="payment_container">
+            <div id="payment">
+                <h4>Payment</h4>
+
+                <!-- Div usage based on the lecture/lab -->
+                <div id="card_check">
+                    <input type="radio" id="credit_card" name="Payment_type" value="CreditCard">
+                    <label for="credit_card">Credit Card</label>
+
+                    <input type="radio" id="debit_card" name="Payment_type" value="DebitCard">
+                    <label for="debit_card">Debit Card</label>
+                </div>
+
+                <label for="card_number"> Card Number:</label>
+                <input type="text" id="card_number" name="creditCard">
+
+                <label for="date"> Date of expiry:</label>
+                <input type="text" id="date" name="date">
+
+                <label for="cvv"> CVV:</label>
+                <input type="text" id="cvv" name="cvv">
+
+                <label for="name_payment"> Name on the card::</label>
+                <input type="text" id="name_payment" name="name">   
+
+                <h4 class="middle_h4">Contact Information</h4>
+
+                <label for="email_payment"> Email:</label>
+                <input type="text" id="email_payment" name="email">
+                <label for="phone_number">Phone Number:</label>
+                <input type="text" id="phone_number" name="Phone Number">
+
+                <div class="confirmation">
+                    <button type="submit" value="submit">Proceed</button>
+                    <button type="reset" value="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
